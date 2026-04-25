@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+.svelte-kit
+build
+*.log
+.env.local
+.env.*.local
+qrgen/crate/target

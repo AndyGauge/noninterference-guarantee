@@ -1,0 +1,16 @@
+[package]
+name = "qrgen"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "qrgen"
+path = "src/main.rs"
+
+[dependencies]
+qrcode = { version = "0.14", default-features = false, features = ["svg"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
